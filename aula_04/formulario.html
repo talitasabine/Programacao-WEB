@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h2>Formulário de Inscrição</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" placeholder="Digite seu nome">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="seuemail@exemplo.com">
+        </div>
+        <div>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" placeholder="(11)90000-0000">
+
+            <label for="curso">Curso Desejado</label>
+            <select id="curso">
+                <option value="" selected disabled>Selecione</option>
+                <option value="PW">Programação Web</option>
+                <option value="ED">Estrutura de Dados</option>
+                <option value="POO">Programação Orientada a Objetos</option>               
+            </select>
+        </div>
+        <div>
+            <h3>Preferências</h3>
+            <input type="radio" name="modalidade" value="presencial"> Presencial
+            <label>
+                <input type="radio" name="modalidade" id="hibrido"> Hibrido
+            </label>
+<label>
+                <input type="checkbox" value="material" name="recursos">Material Impresso
+            </label>
+        </div>
+
+        <div>
+            <label for="data">Data inicio desejada</label>
+            <input type="date" name="data"/>
+
+            <label for="nivel">Nivel de Experiência</label>
+            <input type="range" name="nivel" min="0" max="10" value="5" />
+
+            <label>Foto do estudante</label>
+            <input type="file" name="arquivo" accept="image/*"/>
+        </div>
+        <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" rows="5"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Enviar inscrição</button>
+            <button type="reset">Limpar</button>
+        </div>
+
+    </form>
+</body>

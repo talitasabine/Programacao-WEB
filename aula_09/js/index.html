@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function saudacao(){
+            alert('Olá mundo em JS!')
+        }
+    </script>
+</head>
+<body>
+    <!-- inline js -->
+    <button onclick="alert ('Olá mundo')">OK</button>
+    <button onclick="console.log ('Olá mundo')">TERMINAL</button>
+
+    <button onclick="saudacao()">Exemplo Internal</button>
+    <button onclick="saudacao_externo()">Exemplo External</button>
+    <br>
+
+    <input type="text" id="campo">
+
+    <button id="teste">Teste Event Listener</button>
+    <script src="index.js"></script>
+
+</body>
+</html>
